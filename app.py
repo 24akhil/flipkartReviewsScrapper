@@ -75,7 +75,7 @@ def index():
                 return render_template('results.html', reviews=reviews) # showing the review to the user
         except Exception as e:
             print(e)
-            return 'something is wrong'
+            return 'something is wrong'+str(e)
             #return render_template('results.html')
     else:
         return render_template('index.html')
