@@ -8,7 +8,7 @@ from urllib.request import urlopen as uReq
 
 app = Flask(__name__)  # initialising the flask app with the name 'app'
 
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['POST','GET'])
 def homepage():
     return render_template('index.html')
 
